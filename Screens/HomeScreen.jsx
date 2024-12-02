@@ -1,6 +1,7 @@
-import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
+import { View, Text, Image, ScrollView, StyleSheet, Button } from 'react-native';
 import React from 'react';
 import FitnessCards from "../components/FitnessCards";
+//import { useNavigation } from '@react-navigation/native';
 //import { FitnessItems } from "../Context";
 
 
@@ -9,6 +10,7 @@ const HomeScreen = () => {
   return (
     
     <ScrollView style={styles.scrollView}>
+      
 
     
       <View style={{ backgroundColor: "#A66E38", padding: 10, height: 250, width: "100%" }}>
@@ -38,7 +40,7 @@ const HomeScreen = () => {
        
       </View>
       <FitnessCards/> 
-
+      
     </ScrollView>
     
   );

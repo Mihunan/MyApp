@@ -8,7 +8,7 @@ const WorkoutScreen = () => {
   const navigation = useNavigation();
 
   // Debugging statement to check if route.params.exercises is defined
-  console.log(route.params);
+  //console.log(route.params);
 
   const exercises = route.params?.exercises || [];
 
@@ -27,10 +27,7 @@ const WorkoutScreen = () => {
           size={28}
           color="white"
         />
-        <View style={{flexDirection: "row",alignItems: "center",justifyContent: "space-between",marginLeft:10}}>
-        <Image source={require("../assets/images/slide3.png")} style={{width:"40%", height:125, marginTop: 12, borderRadius:10}} />
-        <Text style={{marginRight:70}}>JUMPING JACKS </Text>
-        </View>
+      
 
         <View style={{flexDirection: "row",alignItems: "center",justifyContent: "space-between",marginLeft:10}}>
         <Image source={require("../assets/images/slide3.png")} style={{width:"40%", height:125, marginTop: 12, borderRadius:10}} />
@@ -52,9 +49,16 @@ const WorkoutScreen = () => {
         <Text style={{marginRight:70}}>JUMPING JACKS </Text>
         </View>
 
-       <View style={{backgroundColor:"blue", padding:10,marginLeft:"auto",marginRight:"auto",marginVertical:20,borderRadius:12,width:"35%"}}>
+        <View style={{flexDirection: "row",alignItems: "center",justifyContent: "space-between",marginLeft:10}}>
+        <Image source={require("../assets/images/slide3.png")} style={{width:"40%", height:125, marginTop: 12, borderRadius:10}} />
+        <Text style={{marginRight:70}}>JUMPING JACKS </Text>
+        </View>
+
+       <Pressable
+       onPress={() => navigation.navigate("Fit")}
+       style={{backgroundColor:"blue", padding:10,marginLeft:"auto",marginRight:"auto",marginVertical:20,borderRadius:12,width:"35%"}}>
         <Text style={{textAlign:"center",color:"white",fontSize:15,fontWeight:500}}>START</Text>
-       </View>
+       </Pressable>
       
       
         
