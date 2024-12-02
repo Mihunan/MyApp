@@ -13,7 +13,7 @@ const WorkoutScreen = () => {
   const exercises = route.params?.exercises || [];
 
   return (
-    <SafeAreaView style={{ backgroundColor: "white", marginTop: 50 }}>
+    <SafeAreaView style={{ backgroundColor: "white", marginTop:10 }}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <Image
           style={{ width: "100%", height: 170 }}
@@ -27,15 +27,41 @@ const WorkoutScreen = () => {
           size={28}
           color="white"
         />
+        <View style={{flexDirection: "row",alignItems: "center",justifyContent: "space-between",marginLeft:10}}>
+        <Image source={require("../assets/images/slide3.png")} style={{width:"40%", height:125, marginTop: 12, borderRadius:10}} />
+        <Text style={{marginRight:70}}>JUMPING JACKS </Text>
+        </View>
 
-        {exercises.map((item, index) => (
-          <Pressable key={index}>
-          <Image style={{ width: "80%", height: 90 }} source={{ uri: item.image }} />
-          <Text>{item.name}</Text>
-          <Text>{item.sets} sets</Text>
-        </Pressable>
-        ))}
+        <View style={{flexDirection: "row",alignItems: "center",justifyContent: "space-between",marginLeft:10}}>
+        <Image source={require("../assets/images/slide3.png")} style={{width:"40%", height:125, marginTop: 12, borderRadius:10}} />
+        <Text style={{marginRight:70}}>JUMPING JACKS </Text>
+        </View>
+
+        <View style={{flexDirection: "row",alignItems: "center",justifyContent: "space-between",marginLeft:10}}>
+        <Image source={require("../assets/images/slide3.png")} style={{width:"40%", height:125, marginTop: 12, borderRadius:10}} />
+        <Text style={{marginRight:70}}>JUMPING JACKS </Text>
+        </View>
+
+        <View style={{flexDirection: "row",alignItems: "center",justifyContent: "space-between",marginLeft:10}}>
+        <Image source={require("../assets/images/slide3.png")} style={{width:"40%", height:125, marginTop: 12, borderRadius:10}} />
+        <Text style={{marginRight:70}}>JUMPING JACKS </Text>
+        </View>
+
+        <View style={{flexDirection: "row",alignItems: "center",justifyContent: "space-between",marginLeft:10}}>
+        <Image source={require("../assets/images/slide3.png")} style={{width:"40%", height:125, marginTop: 12, borderRadius:10}} />
+        <Text style={{marginRight:70}}>JUMPING JACKS </Text>
+        </View>
+
+       <View style={{backgroundColor:"blue", padding:10,marginLeft:"auto",marginRight:"auto",marginVertical:20,borderRadius:12,width:"35%"}}>
+        <Text style={{textAlign:"center",color:"white",fontSize:15,fontWeight:500}}>START</Text>
+       </View>
+      
+      
+        
       </ScrollView>
+      
+      
+      
     </SafeAreaView>
   );
 };
