@@ -1,8 +1,10 @@
 import React from 'react';
-import AppNavigator from './AppNavigator';
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigator from "../AppNavigator"; // Adjust the path if necessary
 
-const Index = () => {
-  return <AppNavigator />;
-};
-
-export default Index;
+export default function Index() {
+  return (
+   
+      <AppNavigator />
+  );
+}
