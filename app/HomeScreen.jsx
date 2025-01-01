@@ -14,6 +14,7 @@ const HomeScreen = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+             
         const response = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=10');
         const data = await response.json();
         setItems(data);
@@ -59,7 +60,7 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#D4EBF8',
     padding: 10,
   },
   header: {
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
   },
   card: {
     flexDirection: 'row',
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#FAF6E3',
     marginBottom: 10,
     borderRadius: 8,
     overflow: 'hidden',
@@ -83,6 +84,7 @@ const styles = StyleSheet.create({
   image: {
     width: 80,
     height: 80,
+    borderRadius: 7,
   },
   cardContent: {
     flex: 1,
@@ -95,13 +97,13 @@ const styles = StyleSheet.create({
   },
   status: {
     fontSize: 14,
-    color: '#777',
+    color: '#333',
   },
   floatingButton: {
     position: 'absolute',
     right: 20,
     bottom: 20,
-    backgroundColor: '#007BFF',
+    backgroundColor: '#FFBF61',
     borderRadius: 30,
     width: 60,
     height: 60,
